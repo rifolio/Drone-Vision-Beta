@@ -9,24 +9,31 @@ To setup this project, follow these steps:
 Clone this repository to your local machine using:
 
 ```bash
-git clone https://github.com/rifolio/ComputerVision-DroneControl.git
+git clone https://github.com/rifolio/Drone-Vision-Beta.git
 ```
 
 ### 2. Set Up Virtual Environment
 
-Navigate to the project directory and set up a virtual environment by running:
-
+Navigate to the project directory and set up a virtual environment by running: 
+(make sure to use python3.9)
 ```bash
-python3.9 -m venv drone #make sure to use python3.9
+python3.9 -m venv drone
 ```
 
 ### 3. Activate Virtual Environment
 
 Activate the virtual environment using:
 
+For Mac
 ```bash
 source drone/bin/activate
 ```
+
+For Windows:
+```bash
+.\drone\Scripts\activate
+```
+
 
 ### 4. Install Dependencies
 
@@ -39,10 +46,10 @@ pip3 install -r requirements.txt
 The `requirements.txt` file contains the following packages:
 
 ```
-djitellopy
 mediapipe
 opencv-python
 djitellopy
+DroneBlocksTelloSimulator
 ```
 
 ### 5. Set up Tello Drone
@@ -59,9 +66,3 @@ You should receive something like this:
 [INFO] tello.py - 438 - Send command: 'command'
 [INFO] tello.py - 462 - Response command: 'ok'
 ```
-
-### 6. Run main.py
-
-```bash 
-python3 main.py
-````
